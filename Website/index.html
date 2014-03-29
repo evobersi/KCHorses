@@ -120,18 +120,18 @@
 			</div>
 			<div class="sixteen columns margin3">
 				<h2><center><strong>Sponsors:</strong></h2>
-				<div class="slider">
-				<div class="content">
-   	 <ul>
+				<!-- <div class="slider">
+				<div class="content"> -->
+   	 <!-- <ul>
       <li><img class="sponsors" src="images/longines.png"  alt="" /></img></li>
       <li><img class="sponsors" src="images/hkjclogo.jpg" alt="" /></img></li>
       <li><img class="sponsors" src="images/Gainhorsefeed.jpg" alt="" /></img></li>
       <li><img class="sponsors" src="images/HKSI.jpg" alt="" /></img></li>
       <li><img class="sponsors" src="images/HKEF.jpg" alt="" /></img></li>
 			<li><img class="sponsors" src="images/Kingsland.jpg" alt="" /></img></li>
-    </ul>
-  	</div>								
-		</div>		
+    </ul> -->
+ <!--  	</div>								
+		</div>		 -->
 		</div>	
 	</div>
 	<div id="team-top">	
@@ -236,33 +236,35 @@
 				<h5>International press coverage including the South China Morning Post and The Wall Street Journal.</h5>
 			</div>
 	</div><center> 
+  <div class="videoWrapper">
 	<iframe width="640" height="390" src="http://www.youtube.com/embed/q1f5kJwYuUM" frameborder="0" allowfullscreen></iframe>
+  </div>
 	<br><br>
 	<div class="news">
 	<ul>
 		<li>	
-				<a href="http://www.lifestyleasia.com/hk/en/people-parties/people/feature/kenneth-cheng-hong-kong-equestrian-rider-interview/" target="_blank">
+				<a href="http://www.lifestyleasia.com/hk/en/people-parties/people/feature/kenneth-cheng-hong-kong-equestrian-rider-interview/" target="_blank" class="news">
 				<h4 class="li-head">Lifestyle Asia HK</h4>
 				<p class="li-summary">A Moment With Equestrian Rider Kenneth Cheng</p>
 				<p class="li-action">Learn More</a></p>
 		</li>
 		<li>
-				<a href="http://blogs.wsj.com/scene/2014/02/21/hong-kong-giddy-ups-for-show-jumping/" class="inner" target="_blank">
+				<a href="http://blogs.wsj.com/scene/2014/02/21/hong-kong-giddy-ups-for-show-jumping/" class="inner" target="_blank" class="news">
 				<h4 class="li-head">Wall Street Journal</h4>
-				<p class="li-summary">Hong Kong Saddles Up For Show Jumping</p>
-				<p class="li-action">Read More</a></p>
+				<p class="li-summary" style="color: black";>Hong Kong Saddles Up For Show Jumping</p>
+				<p class="li-action" style="color: black";>Read More</p></a>
 		</li>
 		<li>
-				<a href="http://www.scmp.com/sport/hong-kong/article/1160280/leung-hou-ling-kenneth-cheng-worlds-best-showjumpers">
+				<a href="http://www.scmp.com/sport/hong-kong/article/1160280/leung-hou-ling-kenneth-cheng-worlds-best-showjumpers" target="_blank" class="news">
 				<h4 class="li-head">South China Morning Post</h4>
 				<p class="li-summary">Leung Hou-ling, Kenneth Cheng with world's best showjumpers</p>
 				<p class="li-action">Learn More</a></p>
 		</li>
 		<li>
-				<a href="http://www.mastersgrandslam.com/en/longines_hong_kong_masters/news/69-Exclusive-Interview-of-Kenneth-Cheng" class="inner" target="_blank">
+				<a href="http://www.mastersgrandslam.com/en/longines_hong_kong_masters/news/69-Exclusive-Interview-of-Kenneth-Cheng" target="_blank">
 				<h4 class="li-head">Master Grand Slam</h4>
-				<p class="li-summary">Exclusive Interview of Kenneth Cheng</p>
-				<p class="li-action">Learn More</a></p>
+				<p class="li-summary" style="color: black";>Exclusive Interview of Kenneth Cheng</p>
+				<p class="li-action" style="color: black";>Learn More</p></a>
 		</li>
 	</ul>
 </div>
@@ -274,10 +276,11 @@
 	<div id="contact">	
 		<div class="container">
 			<div class="sixteen columns margin1">
-				<br><br>
-				<a href="mailto:kennethcheng17@gmail.com"><div class="contact-mail">Email for press inquiries and professional correspondence only.</div></a>
+<!-- 
+				<a href="mailto:kennethcheng17@gmail.com"><div class="contact-mail">Email for press inquiries and professional correspondence only.</div></a> -->
 			</div>
 			<div class="sixteen columns margin3">
+        <img src="images/horsejumper.jpg" alt=""></img>
 				<h3 color="black";><center><strong>Stal Elkenhof<br> 
 					Boenderstraat 12 <br>
 					3670 Ellikom <br>
@@ -291,7 +294,7 @@
 	<div id="map"></div>
 	<div id="copyright">
 		<div class="mask-up"></div>
-		<p class="copy">&copy; copyright 2014 <a href="http://www.ericaobersi.com" target="_blank">EVO</a></p>		
+		<p class="copy">Made by <a href="http://www.ericaobersi.com" target="_blank">EVO</a></p>		
 	</div>				
 	<!-- JAVASCRIPT
   ================================================== -->
@@ -308,7 +311,6 @@
 <script type="text/javascript" src="js/jquery.lettering.js"></script>
 <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
 <script type="text/javascript" src="js/jquery.cbpFWSlider.min.js"></script>
-<script type="text/javascript" src="js/jquery-2.0.3.js"></script>
 <script type="text/javascript" src="js/jquery.swipebox.min.js"></script>
 
 <script>
@@ -423,7 +425,7 @@ $(document).ready(function(){"use strict";
         lat: map.getCenter().lat(),
         lng: map.getCenter().lng(),
         layer: 'overlayLayer',
-        content: '<div class="overlay"><div class="overlay_arrow above"></div></div>',
+        content: '<div style="color:black; font-size: 30px;background:transparent; font-weight: 700;">Stal Elkenhof</div></div>',
         verticalAlign: 'top',
         horizontalAlign: 'center'
       });
@@ -486,7 +488,6 @@ $(document).ready(function(){"use strict";
     $(window).load(function(){"use strict";
       $(".nav-container").sticky({topSpacing:0});
     });
-	
   </script>
 
 <script type="text/javascript">
@@ -506,8 +507,6 @@ $(document).ready(function(){"use strict";
 	});
 });
 </script>
-<!-- End Document
-================================================== -->
 <script>
 $(document).ready(function(){
   $("img").on("click", function(){
@@ -531,118 +530,10 @@ $(document).ready(function(){
     });
   }
 });
-
-</script>
-
-<script>
-$('a[href=#]').on('click dblclick', false);
-
-var slider = $('#promo-slider'),
-        pos_init = slider.children('.slide.secondary_left').css('left');
-        pos_init_2 = $('.slide.slide_current .text_block').css('left');
-    $('.drug-action a.slide').on('click', function() {
-        if ($(this).is('.current, .unready')) { return false; }
-        var parent = $(this).parent(),
-            rel = $(this).attr('data-rel'),
-            duration = 400, pos = '170px', img_timeout = 300,
-            func1, func2,
-            cur_slide = slider.children('.slide.slide_current'),
-            prev_slide = slider.children('.slide.secondary_left'),
-            next_slide = slider.children('.slide.secondary_right'),
-            html_1, html_2, html_3, html, data_id_prev, data_id_next;
-
-        parent.children('a.slide')
-            .removeClass('current')
-            .addClass('unready');
-        $(this).addClass('current');
-
-        if (rel === 'slide_1') {
-            data_id_prev = 'slide_2';
-            data_id_next = 'slide_3';
-        } else if (rel === 'slide_2') {
-            data_id_prev = 'slide_3';
-            data_id_next = 'slide_1';
-        } else if (rel === 'slide_3') {
-            data_id_prev = 'slide_1';
-            data_id_next = 'slide_2';
-        }
-
-        html = slider.find('.slide[data-id=' + rel + '] .inner').html();
-        html_1 = slider.find('.slide[data-id=' + data_id_prev + '] .inner').html();
-        html_2 = slider.find('.slide[data-id=' + rel + '] .inner').html();
-        html_3 = slider.find('.slide[data-id=' + data_id_next + '] .inner').html();
-
-        slider.children('.slide.secondary_left').animate({
-            left: pos
-        }, {
-            duration: duration
-        });
-
-        slider.children('.slide.secondary_right').animate({
-            right: pos
-        }, {
-            duration: duration
-        });
-
-        func1 = function() {
-            cur_slide.find('.text_block').animate({left: '-800px'}, {duration: duration});
-            setTimeout(function() {
-                cur_slide.find('img').animate({left: '-800px'}, {
-                    duration: duration,
-                    complete: function() {
-                        cur_slide.find('.inner')
-                            .hide()
-                            .html(html_2);
-                        cur_slide.find('img, .text_block').css('left', '800px');
-                        cur_slide.find('.inner').show();
-                        prev_slide.find('.inner').html(html_1);
-                        next_slide.find('.inner').html(html_3);
-                        func2();
-                    }
-                });
-            }, img_timeout);
-        };
-
-        func2 = function() {
-            cur_slide.find('.text_block').animate({left: pos_init_2}, {duration: duration});
-            setTimeout(function() {
-                cur_slide.find('img').animate({left: '0'}, {
-                    duration: duration,
-                    complete: function() {
-                        cur_slide.find('img').css('left', '');
-                        prev_slide.animate({
-                            left: pos_init
-                        }, {
-                            duration: duration
-                        });
-
-                        next_slide.animate({
-                            right: pos_init
-                        }, {
-                            duration: duration,
-                            complete: function() {
-                                cur_slide.attr('data-id', rel);
-                                prev_slide.attr('data-id', data_id_prev);
-                                next_slide.attr('data-id', data_id_next);
-                                prev_slide.css('left', '');
-                                next_slide.css('right', '');
-                                parent.children('a.slide').removeClass('unready');
-                                // alert('left_id: ' + data_id_prev + '; middle_id: ' + rel + '; right_id: ' + data_id_next);
-                            }
-                        });
-                    }
-                });
-            }, img_timeout);
-        };
-
-        setTimeout(func1, duration);
-        // func1();
-    });
-
-$('div.slide.secondary').on('click', function() {
-        $('.drug-action a.slide[data-rel=' + $(this).attr('data-id') + ']').click();
-    });
 </script>
 	<script src="http://fotorama.s3.amazonaws.com/4.4.9/fotorama.js"></script>
+<!-- End Document
+================================================== -->
 </body>
+
 </html>

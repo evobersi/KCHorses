@@ -1,25 +1,3 @@
-
-$.ajax({
-  url: 'https://api.twitter.com/1/statuses/user_timeline.json?screen_name=envato&count=1&callback=?',
-  dataType: 'json',
-  success: function(data){
-    $.each(data, function(i,item){
-      ct = item.text;
-      // include time tweeted - thanks to will
-      mytime = item.created_at;
-      var strtime = mytime.replace(/(\+\S+) (.*)/, '$2 $1')
-      var mydate = new Date(Date.parse(strtime)).toLocaleDateString();
-      var mytime = new Date(Date.parse(strtime)).toLocaleTimeString();
-      ct = ct.replace(/http:\/\/\S+/g,  '<a href="$&" target="_blank">$&</a>');
-      twitterURL = "http://twitter.com/";
-      ct = ct.replace(/\s(@)(\w+)/g,    ' @<a href="'+twitterURL+'$2">$2</a>');
-      ct = ct.replace(/\s(#)(\w+)/g,    ' #<a href="'+twitterURL+'search?q=%23$2" target="_blank">$2</a>');
-      $("#jstweets").append('<div>'+ct + ' <small><i>(' + mydate + ' @ ' + mytime + ')</i></small></div>');
-    });
-  }
-});
-
-
 /*global $:false */
 (function($){
     $.fn.parallax = function(options){
@@ -83,7 +61,6 @@ $('#contact-top').parallax({ "coeff":-0.04 });
       });
       
 	   // To make dropdown actually work
-	   // To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
       $("nav select").change(function() {
         window.location = $(this).find("option:selected").val();
       });
