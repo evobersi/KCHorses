@@ -29,13 +29,6 @@ $('#services-top').parallax({ "coeff":-0.14 });
 $('#works-top').parallax({ "coeff":-0.10 });
 $('#blog-top').parallax({ "coeff":-0.08 });
 $('#contact-top').parallax({ "coeff":-0.04 });
-
-
-/*global $:false */
-	  $(document).ready(function() {"use strict";
-	    $( '.words' ).lettering('words');
-	  });
-	  
 	  
 /*global $:false */
 	 // DOM ready

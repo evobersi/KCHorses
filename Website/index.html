@@ -28,26 +28,20 @@
 		
 	<!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="images/showjumper.png">
+	<link rel="shortcut icon"  href="images/showjumper.png">
 	<link rel="apple-touch-icon" href="images/showjumper.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="images/showjumper.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/showjumper.png">
 </head>
+<!-- Primary Page Layout
+  ================================================== -->
 <body>
-	<!-- Primary Page Layout
-	================================================== -->
 	<div id="home">
 		<div class="container">
 			<div class="eight columns">
 				<div id="logo-top"><a href="#home" class="logo scroll"></a></div>	
 			</div>
-			<div class="eight columns">
-				<div class="right">
-					<ul class="list-social-top">
-						<li class="icon-soc-top"><a href="#">&#xf099;</a></li>
-						<li class="icon-soc-top"><a href="#">&#xf09a;</a></li>
-					</ul>	
-				</div>
+			<div class="eight columns">			
 			</div>	
 		</div>	
 	<div id="container1">
@@ -219,13 +213,21 @@
 	</tbody>
 </table>
 	</div>
+  <div class="two columns margin6">
+        <center><img src="images/horsejumper.jpg" style="background-position:center;"></img>
+        <h3><strong>Stal Elkenhof</strong></h>
+          <h3>Boenderstraat 12 <br>
+          3670 Ellikom <br>
+          Belgium
+        </h3>
+      </div>  
 	</div>									
 	</div>		
 	</div>
 	<div id="services-top">	
 	<div class="mask-up"></div>
-			<div id="cbp-fwslider3" class="cbp-fwslider"></div>	
-	<div class="mask-down"></div>
+    <div id="map"></div>	
+  <div class="mask-down"></div>
 </div>
 	<div id="blog">	
 <div class="container">
@@ -275,26 +277,25 @@
 </div>
 	<div id="contact">	
 		<div class="container">
-			<div class="sixteen columns margin1">
-<!-- 
-				<a href="mailto:kennethcheng17@gmail.com"><div class="contact-mail">Email for press inquiries and professional correspondence only.</div></a> -->
+      <div class="two columns margin6 margin1">
+        <center> <a href="mailto:kennethcheng17@gmail.com"><img src="images/email1_logo.png" style="background-position:center;"/></a>
+      </div>    
+      <div class="two columns margin6 margin1">
+        <center><img src="images/facebook_logo.png" style="background-position:center;"></img>
+        <a href="#">
+        <h4 class="margin4"></h4>    
+      </div>  
+      <div class="two columns margin6 margin1">
+        <center><img src="images/twitter_logo.png" style="background-position:center; padding-top: 5px;"></img>
+        <a href="#">
+        <h4 class="margin4"></h4>    
+      </div>     
+      </div>
 			</div>
-			<div class="sixteen columns margin3">
-        <img src="images/horsejumper.jpg" alt=""></img>
-				<h3 color="black";><center><strong>Stal Elkenhof<br> 
-					Boenderstraat 12 <br>
-					3670 Ellikom <br>
-					Belgium
-				</strong></h3>
-				<p></p>
-			</div>			
 		</div>
-		<div class="mask-down"></div>	
-	</div>	
-	<div id="map"></div>
-	<div id="copyright">
-		<div class="mask-up"></div>
-		<p class="copy">Made by <a href="http://www.ericaobersi.com" target="_blank">EVO</a></p>		
+	</div>
+ <div id="copyright">
+		<p class="copy"><a href="http://www.ericaobersi.com" target="_blank">Made by EVO</a></p>		
 	</div>				
 	<!-- JAVASCRIPT
   ================================================== -->
@@ -420,14 +421,6 @@ $(document).ready(function(){"use strict";
         el: '#map',
         lat: 51.127190,
         lng: 5.523660
-      });
-      map.drawOverlay({
-        lat: map.getCenter().lat(),
-        lng: map.getCenter().lng(),
-        layer: 'overlayLayer',
-        content: '<div style="color:black; font-size: 30px;background:transparent; font-weight: 700;">Stal Elkenhof</div></div>',
-        verticalAlign: 'top',
-        horizontalAlign: 'center'
       });
     });
 </script>

@@ -758,6 +758,7 @@
 	border-right:2px dotted rgba(250,105,0,.3);
 	text-align:right;
 	color:#000;
+	background: url(images/parallax/cartographer.png);
 }
 #about h2{
 	font-weight:normal;
@@ -2092,6 +2093,11 @@ box-shadow: 12px 17px 43px -20px rgba(0,0,0,0.75);
 #contact span:hover{
 	color:#A8A8A8;
 }
+
+.contact-info {
+	height: 200px;
+	overflow: scroll;
+}
 .center{ 
     text-align: center; 
 	margin-top:30px;
@@ -2180,10 +2186,10 @@ box-shadow: 12px 17px 43px -20px rgba(0,0,0,0.75);
   border-bottom:16px dotted #000;
 }
 #copyright{
-	position:relative;
+	position: relative;
 	width:100%;
 	font-family: 'OpenSans-Regular-webfont';
-    background: #fff;
+  background: #fff;
 	font-size: 16px;
 	line-height:120px;
 	color: #000;
@@ -3143,4 +3149,8 @@ a {
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+.theDiv {
+	display: none;
 }
